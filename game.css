@@ -1,0 +1,9 @@
+fieldset.level{
+    width: max-content;
+    display: inline;
+    float: left;
+}
+
+span.alert{
+    color: red;
+}

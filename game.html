@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src = "game.js" type ="module"></script>
+		<link href = "game.css" rel="stylesheet">
+	</head>
+	<body>
+		<fieldset id = "dash" class = "level">
+			<legend> Dashboard </legend>
+			<p>Pocket: <span id = "pocket"></span> $</p>
+			<p>Spaghetti: <span id = "total"></span> pz</p>
+		</fieldset>
+
+		<fieldset id = "level_0" class = "level">
+			<legend> Craft & Sell</legend>
+			<label>Click to <input id = "button_craft" type = "button" value = "Craft">
+			</label>
+			<p id = "auto_mod">
+				<span id = "alert" class = "alert">
+					For some reason, price is locked at 0.10 $ :(<br><br>
+				</span>
+				Craft rate: <span id = "craft_rate"></span> Hz<br>
+				<label>Cost: <span id = "craft_cost"></span> $ 
+				<input id = "upg_auto_craft" type = "button" value = "Speed up" >
+			</label><br><br>
+				Sell rate: <span id = "sell_rate"></span> Hz<br>
+				<label>Cost: <span id = "sell_cost"></span> $ 
+				<input id = "upg_auto_sell" type = "button" value = "Speed up" >
+				</label>
+			</p>
+		</fieldset>
+
+		<fieldset id = "level_1" class = "level">
+			<legend>Supply & Demand</legend>
+			<label> Price: <input id = "slider" type = "range" min = "0.05" max = "5" step="0.05">
+			</label>
+			<span id = "price"></span> $
+		</fieldset>
+	</body>
+</html>
