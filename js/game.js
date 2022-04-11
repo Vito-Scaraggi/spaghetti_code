@@ -8,4 +8,5 @@ window.onload = function start(){
 	window.lv_1 = new level_1(document.getElementById('level_1'));
 	window.dash.show();
 	window.lv_0.show();
+	//window.lv_1.show();
 };

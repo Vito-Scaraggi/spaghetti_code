@@ -9,6 +9,10 @@
 			<legend> Dashboard </legend>
 			<p>Pocket: <span id = "pocket"></span> $</p>
 			<p>Spaghetti: <span id = "total"></span> pz</p>
+			<!--
+			<p>Effective craft rate: <span id = "ecr"></span> Hz</p>
+			<p>Effective sell rate: <span id = "esr"></span> Hz</p>
+			-->
 		</fieldset>
 
 		<fieldset id = "level_0" class = "level">
@@ -32,9 +36,26 @@
 
 		<fieldset id = "level_1" class = "level">
 			<legend>Supply & Demand</legend>
-			<label> Price: <input id = "slider" type = "range" min = "0.05" max = "5" step="0.05">
+			<label> Price: <input id = "slider" type = "range" min = "0.05" max = "2.00" step="0.05">
 			</label>
 			<span id = "price"></span> $
+			<fieldset>
+				<legend>Improve Supply</legend>
+				<label> Decrease goto nutritional value: <span id = "goto_perc"></span>% 
+					<br>
+					<label>Cost: <span id = "goto_cost"> </span> $ 
+						<input id = "goto_lower" type = "button" value ="Decrease">	
+					</label>
+				</label>
+				<br>Current craft delta: <span id ="craft_delta"></span>%
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Improve Demand</legend>
+				Kill competitors to reach monopoly: <span id = "killed"></span><br>
+				<ul id = "competitors"></ul>
+				Current sell delta: <span id ="sell_delta"></span>%
+			</fieldset>
 		</fieldset>
         <!--
         <fieldset>
